@@ -110,12 +110,12 @@ app.post('/', function (req, res) {
 			if(req.body.rqp.hasOwnProperty("pc")){
 				var ae;
 				pc = req.body.rqp.pc;
-				if(pc.hasOwnProperty("m2m:ae"))
-					ae = pc["m2m:ae"];
-				if(pc.hasOwnProperty("m2m:cnt"))
-					ae = pc["m2m:cnt"];
-				if(pc.hasOwnProperty("m2m:cin"))
-					ae = pc["m2m:cin"];
+				if(pc.hasOwnProperty("ae"))
+					ae = pc["ae"];
+				if(pc.hasOwnProperty("cnt"))
+					ae = pc["cnt"];
+				if(pc.hasOwnProperty("cin"))
+					ae = pc["cin"];
 				Object.keys(ae).forEach(function(k){
 				   if(k == "lbl")
 					{
