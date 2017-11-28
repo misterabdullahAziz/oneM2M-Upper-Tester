@@ -144,7 +144,7 @@ var mia="500";
 // ************************************** Container : Retrieve ***********************************//
 
 
-//DELETE Container with maxInstanceAge attribute
+//Retrive Container with maxInstanceAge attribute
 // adn4.getContainer(AEOrigin,url);
 
 // ************************************** ContentInstance : CREATE ***********************************//
