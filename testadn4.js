@@ -150,6 +150,8 @@ var mia="500";
 // ************************************** ContentInstance : CREATE ***********************************//
 
 var con = "on";
+var cnf=1; //encoding type, can be 0:plain, 1:base64 encode string, 2: base64 encoded binary
+var conr="content_ref";
 
 
 //Creating ContentInstance with mandatory attributes
@@ -158,6 +160,8 @@ var con = "on";
 //Creating ContentInstance with resourceName attributes
 // adn4.createContentInstancern(AEOrigin,url,con,rn);
 
+//Creating ContentInstance with expirationTime attributes
+// adn4.createContaineret(AEOrigin,url,con,et);
 
 //Creating ContentInstance with labels attributes
 // adn4.createContentInstancelbl(AEOrigin,url,con,lbl);
@@ -167,12 +171,10 @@ var con = "on";
 // adn4.createContentInstancecr(AEOrigin,url,con,cr);
 
 //Creating ContentInstance with contentInfo attributes
-var cnf=1; //encoding type, can be 0:plain, 1:base64 encode string, 2: base64 encoded binary
 // adn4.createContentInstancecnf(AEOrigin,url,con,cnf);
 
 
 //Creating ContentInstance with contentInfo attributes
-var conr="content_ref";
 // adn4.createContentInstanceconr(AEOrigin,url,con,conr);
 
 
@@ -195,7 +197,7 @@ var conr="content_ref";
 
 
 //Delete latest contentInstance
-// adn4.deleteContentInstanceOldest(AEOrigin,url);
+// adn4.deleteContentInstanceLatest(AEOrigin,url);
 
 //delete latest contentInstance
 // adn4.deleteContentInstanceOldest(AEOrigin,url);

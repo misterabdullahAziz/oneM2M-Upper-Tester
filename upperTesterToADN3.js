@@ -21,7 +21,7 @@ var url = process.argv[2];
 var testCaseID = process.argv[3];
 var valueToSend = process.argv[4];
 
-var adn4 = require("./adn4.js");
+var adn3 = require("./adn3.js");
 var origin = "SOrigin"; 
 var AEOrigin = "S";
 
@@ -58,14 +58,14 @@ else if(testCaseID == "AE/GEN/00002/00001"){
 }
 else if(testCaseID == "AE/REG/00002/00001"){ ////********** AE Resource ************////
 	//Create <AE> with mandatory attributes
-	adn4.createAE(origin,url,api,rr);
+	adn3.createAE(origin,url,api,rr);
 }
 
 else if(testCaseID == "AE/DMR/00001/00001"){       ////********** Container Resource ************////
 	//Create <container> with no attribute set
-	adn4.createContainer(AEOrigin,url);
+	adn3.createContainer(AEOrigin,url);
 }
 else if(testCaseID == "AE/DMR/00002/00001"){		////********** ContentInstance Resource ************////
 	//Create <contentInstance> with mandatory attributes
-	adn4.createContentInstance(AEOrigin,url,con);
+	adn3.createContentInstance(AEOrigin,url,con);
 }
